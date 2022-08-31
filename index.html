@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="lrt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"   content="width=device-widht, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <main>
+                <section>
+                    <input type="checkbox" id="check">
+                    <header>
+                        <h2>
+                            <a href="#" class="logo">VALORANT</a>
+                        </h2>
+                    
+                        <div class="navigation">
+                            <a href="#">Profil</a>
+                            <a href="#">Rank</a>
+                            <a href="#">Skins</a>
+                            <a href="#">Stats</a>
+                            <a href="https://wa.me/6282336936669">Contact</a> 
+                        </div>
+                        <label for="check">
+                            <i class="fas fa-bars menu-btn"></i>
+                            <i class="fas fa-times close-btn"></i>
+                        </label>   
+                    </header>
+                    <div class="content">
+                        <div class="info">
+                            <h2>I'M Dakotabless <br><span>Duelist</span></h2>
+                            <p>Hari hari ngeCarry, Lihat Profile, Rank, Stats klik "Find Me", Ingin chat Klik "contact", Ingin skin? Request Blokkk</p>
+                            <head>
+                                <title>Hyperlink CSS</title>
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                            </head>
+                            <body>
+                                <a class="info-btn" href="https://tracker.gg/valorant/profile/riot/Dakotabless%23ayy/overview">Find Me</a>
+                            </body>
+                        </div>
+                    </div>
+                    <div class="big-wrapper lightmode">
+                        <div class="bottom-area">
+                            <div class="container">
+                                <button class="toggle-btn">
+                                    <i class="fas fa-moon" onclick="toggleAnimation()" id="darkbtn"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>    
+        </main>
+
+        <!-- JavaScript Files -->
+        <script>
+
+            var btn = document.getElementById("darkmode")
+
+            function toggleAnimation(){
+                document.body.classList.toggle("darkmode")
+                if(document.body.classList.contains("darkmode")){
+                    btn.src = ''
+                } else {
+                    btn.src = ''
+                }
+            }
+            
+            
+
+
+
+
+
+            /*<!--<i class="far fa-sun" onclick="toggleAnimation()" id="darkbtn"></i>-->
+            /*var btn = document.getElementById("darkmode");
+
+            function toggleAnimation(){
+                document.body.classList.toggle("darkmode");
+                if(document.body.classList.contains("darkmode")){
+                    btn.src = ''
+                }else{
+                    btn.src = ''
+                }
+            }*/
+        </script>
+    </body>
+</html>
